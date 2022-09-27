@@ -1,0 +1,27 @@
+@import './variables.scss';
+.container {
+  max-width: $max-width-app;
+  display: flex;
+  border: solid 1px;
+  padding: 0.5em 2em;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $bg-color;
+  margin: auto;
+}
+.navlinks {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  li {
+    margin-left: 3em;
+    list-style: none;
+    color: $f-text-hover;
+    cursor: pointer;
+    & :hover {
+      //!
+      color: $f-text-dark;
+      background-color: red;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@mixin containerFlex {
+  display: flex;
+}
+@mixin headerSection {
+  display: grid;
+  width: 70vw;
+  grid-template-columns: 4fr 1fr;
+  align-items: center;
+  gap: 3em;
+  color: $brown;
+  justify-items: flex-end;
+
+  .break {
+    width: 100%;
+    border: solid 2px $brown;
+    border-radius: 3px;
+  }
+  h3 {
+    white-space: nowrap;
+  }
+}
+
+@mixin section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 4em;
+  margin-bottom: 4em;
+  gap: 2em;
+}

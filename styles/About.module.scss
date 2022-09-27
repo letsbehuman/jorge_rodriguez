@@ -1,0 +1,9 @@
+@import './variables.scss';
+@import './mixes';
+
+.container {
+  @include section;
+}
+.header {
+  @include headerSection;
+}

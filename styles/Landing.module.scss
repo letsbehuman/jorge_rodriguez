@@ -1,0 +1,60 @@
+@import './variables.scss';
+
+.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  margin: 3em auto;
+  padding: 0 4em;
+  gap: 0 1em;
+  justify-content: center;
+  height: 45em;
+  max-width: $max-width-app;
+}
+.title {
+  justify-self: flex-end;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h1 {
+    line-height: 88%;
+    font-size: clamp(5rem, 9.2vw + 1rem, 9.8rem);
+    display: flex;
+  }
+  h2 {
+    font-size: clamp(1.5rem, 3.5vw + 1rem, 4.5rem);
+  }
+  h4 {
+    font-size: clamp(1rem, 3vw + 1rem, 3.5rem);
+  }
+}
+.portrait {
+  position: relative;
+  border-radius: 2em;
+  grid-column: 2/3;
+}
+.myName {
+  background-color: $extra;
+  padding: 0.7rem;
+  border-radius: 0.5em;
+}
+.imgPortrait {
+  // border-radius: 2em;
+}
+.box {
+  position: absolute;
+  width: 12vmax;
+  height: 12vmax;
+  background-color: $orange;
+  border-radius: 1em;
+  opacity: 0.8;
+  bottom: 3%;
+  right: 1%;
+}
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}

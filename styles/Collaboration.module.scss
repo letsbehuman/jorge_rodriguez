@@ -1,0 +1,36 @@
+@import './variables.scss';
+
+.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2em auto;
+  padding: 1.5em;
+  background-color: $green;
+  border-radius: 1.5em;
+  color: $f-text-light;
+  max-width: 60em;
+  align-items: center;
+
+  h2 {
+    width: 5em;
+    z-index: 3;
+  }
+  h4 {
+    padding: 1em;
+    z-index: 3;
+    text-align: center;
+  }
+}
+.bgImg {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  opacity: 1;
+  background-color: $brown;
+  border-radius: 2em 0 0 2em;
+}
+.image {
+  border-radius: 2em 0 0 2em;
+  opacity: 0.4;
+}
