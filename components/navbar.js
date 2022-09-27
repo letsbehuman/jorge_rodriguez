@@ -8,15 +8,15 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <div className="">
-        <Link href="/">
+        {/* <Link href="/">
           <Image
-            src="/../../public/assets/social/codewars.png"
+            // src="/../../public/assets/social/codewars.png"
             href="/"
             alt="logo"
             width="125"
             height="50"
           />
-        </Link>
+        </Link> */}
       </div>
       <div>
         <ul className={styles.navlinks}>

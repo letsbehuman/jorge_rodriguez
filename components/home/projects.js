@@ -1,6 +1,6 @@
 import ProjectCard from '../projectCard';
 import styles from '../../styles/Projects.module.scss';
-import { projectList } from '../projectList';
+import { projectList } from '../../utils/projectList';
 
 const Projects = () => {
   // console.log(projectList, 'hi');
