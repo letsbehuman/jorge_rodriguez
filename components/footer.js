@@ -1,8 +1,8 @@
-import { container } from '../styles/Footer.module.scss';
+import styles from '../styles/Footer.module.scss';
 
 const Footer = () => {
   return (
-    <div className={container}>
+    <div className={styles.section}>
       <p>Site design + build by me © 2022 </p>
     </div>
   );

@@ -4,7 +4,7 @@ import Portrait from '../../public/assets/img/P1010076B.JPG';
 
 const Landing = () => {
   return (
-    <div id="landing" className={styles.container}>
+    <div id="landing" className={styles.section}>
       <div className={styles.title}>
         <h4>
           Hi there! I am <span className={styles.myName}>Jorge,</span> I want to

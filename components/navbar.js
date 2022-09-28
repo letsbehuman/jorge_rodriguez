@@ -6,7 +6,7 @@ import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 const Navbar = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.section}>
       <div className="">
         {/* <Link href="/">
           <Image

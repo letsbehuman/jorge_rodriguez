@@ -5,7 +5,7 @@ import { projectList } from '../../utils/projectList';
 const Projects = () => {
   // console.log(projectList, 'hi');
   return (
-    <div id="projects" className={styles.container}>
+    <div id="projects" className={styles.section}>
       <div className={styles.header}>
         <div className={styles.break}></div>
         <h3 className="">My projects</h3>

@@ -28,3 +28,21 @@
   margin-bottom: 4em;
   gap: 2em;
 }
+@mixin aboutContent($color) {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1em;
+  border: solid 7px $color;
+  padding: 2em 3em;
+  border-radius: 1em;
+  background-color: $brown;
+  color: $f-text-light;
+  max-width: 40em;
+  min-height: 16em;
+}
+@mixin activeTab($color) {
+  background-color: $color;
+  color: $f-text-light;
+  border-radius: 0.35em 0.35em 0 0;
+}

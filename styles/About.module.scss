@@ -1,15 +1,58 @@
 @import './variables.scss';
 @import './mixes';
 
-.container {
+.section {
   @include section;
 }
+
 .header {
   @include headerSection;
 }
-.beingWeird {
-  color: red;
+
+.tabContainer {
+  display: flex;
+  gap: 1.3em;
+
+  justify-content: center;
+  button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0.5em;
+    color: $f-text-dark;
+    font-size: 1em;
+  }
+
+  $tabsColors: (
+    '1': $blue,
+    '2': $orange,
+    '3': $extra,
+    '4': $blue,
+    '5': $green,
+  );
+
+  @each $key, $val in $tabsColors {
+    .tab--#{$key} {
+      &:hover {
+        background-color: $val;
+        border-radius: 0.25em 0.25em 0 0;
+      }
+    }
+    .tabActive--#{$key} {
+      @include activeTab($val);
+    }
+  }
 }
-.background {
-  background-color: blue;
+
+$contentTab: (
+  'beingWeird': $blue,
+  'background': $green,
+  'sustainability': $orange,
+  'hobbies': $extra,
+  'learning': $blue,
+);
+@each $key, $val in $contentTab {
+  .#{$key} {
+    @include aboutContent($val);
+  }
 }

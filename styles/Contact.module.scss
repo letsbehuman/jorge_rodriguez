@@ -1,10 +1,29 @@
 @import './variables.scss';
 @import './mixes';
 
-.container {
+.section {
   @include section;
 }
-
 .header {
   @include headerSection;
+}
+.content {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  border: solid 1px red;
+  gap: 1em;
+  .break {
+    border: solid $extra 2px;
+    height: 100%;
+  }
+}
+.socialSection {
+  display: flex;
+  flex-direction: column;
+}
+.socialIcon {
+  display: flex;
+  position: relative;
+  height: 2em;
+  width: 2em;
 }
