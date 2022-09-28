@@ -28,6 +28,7 @@
   margin-bottom: 4em;
   gap: 2em;
 }
+
 @mixin aboutContent($color) {
   display: flex;
   flex-direction: column;
