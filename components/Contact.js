@@ -15,28 +15,34 @@ const Contact = () => {
       </div>
       <div className={styles.content}>
         <div className={styles.socialSection}>
-          <h4>Let's work together</h4>
+          <h4>{"Let's work together"}</h4>
           <ul>
             <li className={styles.socialIcon}>
-              <a href="https://github.com/letsbehuman" target="_blank">
-                <Image src={github} layout="fill" objectFit="cover" />
+              <a
+                href="https://github.com/letsbehuman"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Image alt="" src={github} layout="fill" objectFit="cover" />
               </a>
             </li>
             <li className={styles.socialIcon}>
               <a
                 href="https://www.codewars.com/users/letsbehuman"
                 target="_blank"
+                rel="noreferrer"
               >
-                <Image src={codewars} layout="fill" objectFit="cover" />
+                <Image alt="" src={codewars} layout="fill" objectFit="cover" />
               </a>{' '}
             </li>
             <li className={styles.socialIcon}>
               <a
                 href="https://www.linkedin.com/in/jorgerodriguezvega-953564121/"
                 target="_blank"
+                rel="noreferrer"
               >
-                <Image src={linkedin} layout="fill" objectFit="cover" />
-              </a>{' '}
+                <Image alt="" src={linkedin} layout="fill" objectFit="cover" />
+              </a>
             </li>
           </ul>
         </div>
@@ -44,12 +50,12 @@ const Contact = () => {
         <div className={styles.emailSection}>
           <h5>
             <a href="mailto:letsbehumandesign@gmail.com">
-              letsbehumandesign@gmail.com
+              {'letsbehumandesign@gmail.com'}
             </a>
           </h5>
           <h5>
             <a href={CV} download="Jorge Rodriguez CV">
-              My resume
+              {'My resume'}
             </a>
           </h5>
         </div>

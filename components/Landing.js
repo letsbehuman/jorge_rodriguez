@@ -14,7 +14,7 @@ const Landing = () => {
       </div>
       <div className={styles.portrait}>
         <Image
-          alt="foto"
+          alt="Portrait Jorge"
           src={Portrait}
           layout="fill"
           objectFit="cover"

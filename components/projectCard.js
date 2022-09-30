@@ -22,6 +22,7 @@ function ProjectCard({ project }) {
             height="620"
             width="690"
             layout="intrinsic"
+            alt="Project preview"
           />
           <div className={styles.technical}>
             <ul className={styles.tools}>
@@ -30,10 +31,20 @@ function ProjectCard({ project }) {
               ))}
             </ul>
             <div className={styles.seeMore}>
-              <a href={project.demo} target="_blank" className={styles.link}>
+              <a
+                href={project.demo}
+                target="_blank"
+                rel="noreferrer"
+                className={styles.link}
+              >
                 <FiGithub />
               </a>
-              <a href={project.demo} target="_blank" className={styles.link}>
+              <a
+                href={project.demo}
+                target="_blank"
+                rel="noreferrer"
+                className={styles.link}
+              >
                 <IoOpenOutline />
               </a>
             </div>
