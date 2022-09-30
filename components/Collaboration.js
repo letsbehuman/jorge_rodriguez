@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import styles from '../../styles/Collaboration.module.scss';
-import ImgCollaboration from '../../public/assets/img/volunteers.jpg';
+import styles from '../styles/Collaboration.module.scss';
+import ImgCollaboration from '../public/assets/img/volunteers.jpg';
 const Collaboration = () => {
   return (
     <div id="collaboration" className={styles.section}>

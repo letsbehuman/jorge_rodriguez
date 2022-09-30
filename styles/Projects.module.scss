@@ -7,3 +7,10 @@
 .header {
   @include headerSection;
 }
+.myGoal {
+  color: $brown;
+  font-weight: 600;
+  padding: 0.5em 3em;
+  text-align: center;
+  border-radius: 1em;
+}

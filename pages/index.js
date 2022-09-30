@@ -1,10 +1,13 @@
 import Head from 'next/head';
-import { Fragment } from 'react';
-import HomePage from '../components/home/index';
+import React, { Fragment } from 'react';
 import SocialBar from '../components/socialBar';
-import Footer from '../components/footer';
-import Navbar from '../components/navbar';
-import React from 'react';
+import Footer from '../components/Footer';
+import Landing from '../components/Landing';
+import Collaboration from '../components/Collaboration';
+import About from '../components/About';
+import Contact from '../components/Contact';
+import Projects from '../components/Projects';
+import styles from '../styles/Main.module.scss';
 
 export default function Home() {
   return (
@@ -12,12 +15,15 @@ export default function Home() {
       <Head>
         <title>Jorge Rodriguez | Front-End Developer</title>
       </Head>
-
-      <Navbar />
-      {/* <SocialBar /> */}
-      <HomePage />
-
-      <Footer />
+      {/* <Navbar /> */}
+      <div className={styles.main}>
+        <Landing />
+        <Collaboration />
+        <Projects />
+        <About />
+        <Contact />
+        <Footer />
+      </div>
     </Fragment>
   );
 }

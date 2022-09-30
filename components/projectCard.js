@@ -1,22 +1,44 @@
 import React from 'react';
 import styles from '../styles/ProjectCard.module.scss';
 import Image from 'next/image';
+import { FiGithub } from 'react-icons/fi';
+import { IoOpenOutline } from 'react-icons/io5';
 
 function ProjectCard({ project }) {
   return (
     <div className={styles.container}>
       <div className={styles.project__info}>
-        <h3>{project.title}</h3>
-        <p>{project.description1}</p>
+        <h3 className={styles.title}>{project.title}</h3>
+        <p className={styles[`description-${project.id}`]}>
+          {project.description1}
+        </p>
         <p>{project.description2}</p>
       </div>
-      <div className={styles.project__img}>
-        <Image
-          src={project.img}
-          layout="fill"
-          objectFit="center"
-          className={styles.preview}
-        />
+
+      <div className={styles.project__preview}>
+        <div className={styles.preview}>
+          <Image
+            src={project.img}
+            height="620"
+            width="690"
+            layout="intrinsic"
+          />
+          <div className={styles.technical}>
+            <ul className={styles.tools}>
+              {project.tools.map((tool, index) => (
+                <li key={index}>{tool}</li>
+              ))}
+            </ul>
+            <div className={styles.seeMore}>
+              <a href={project.demo} target="_blank" className={styles.link}>
+                <FiGithub />
+              </a>
+              <a href={project.demo} target="_blank" className={styles.link}>
+                <IoOpenOutline />
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

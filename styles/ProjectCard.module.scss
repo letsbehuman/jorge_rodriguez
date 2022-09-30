@@ -1,26 +1,107 @@
 @import './variables.scss';
 
 .container {
+  position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 40% 60%;
+  align-items: center;
   margin: auto;
-  height: 30em;
-  max-width: 90em;
+  min-height: 30em;
+  max-width: 80em;
   margin: 2em 0;
-  border: solid 1px;
+  // border: solid 1px;
 }
 
 .project__info {
-  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 1em;
+  p {
+    padding: 0.5em;
+    font-size: 1.3rem;
+  }
+}
+.title {
+  color: $brown;
 }
 
-.project__img {
-  position: relative;
-  // width: 100%;
-  // height: 100%;
-  // border: solid 6px white;
-  border-radius: 1em;
+.description-1 {
+  // background-color: $orange;
+  border-radius: 0.25em;
 }
-.preview {
-  border-radius: 1em;
+.description-2 {
+  // background-color: $blue;
+  border-radius: 0.25em;
+}
+
+//*
+.project__preview {
+  position: relative;
+  display: flex;
+  // border: solid 1px red;
+  height: 100%;
+  justify-content: flex-end;
+  .technical {
+    display: none;
+    padding: 1em;
+    border-radius: 2em 0 0 2em;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+  }
+  &:hover {
+    .technical {
+      transform: translateX(0);
+      transition: all ease-in 1s;
+      display: flex;
+      margin: auto 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3em;
+      width: 30%;
+      height: 90%;
+      background-color: rgba($color: $blue, $alpha: 0.7);
+    }
+  }
+}
+
+.tools {
+  display: flex;
+  gap: 0.5em;
+  flex-direction: column;
+  justify-content: center;
+  li {
+    cursor: default;
+    padding: 0.5em 0.7em;
+    font-size: 0.8rem;
+    background: rgba($color: $bg-color, $alpha: 0.79);
+    color: $brown;
+    font-size: 1.3rem;
+    border-radius: 0.5em;
+  }
+}
+.seeMore {
+  display: flex;
+  gap: 1em;
+  .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 0.3em 0.3em;
+    // width: 2em;
+    // height: 2em;
+    border-radius: 0.5em;
+    font-weight: 700;
+    color: $f-text-light;
+    &:hover {
+      background-color: rgba($color: $blue, $alpha: 1);
+      color: $brown;
+      // border: solid 1px $brown;
+    }
+  }
 }

@@ -3,7 +3,7 @@ export const aboutContent = [
     id: 1,
     tabName: 'Being weird',
     header: 'How I see the world',
-    body: 'I think human kind are here to enhance the potential on the planet,    even tough all living things and the earth itself is capable of heal or maintain balance, with the abilities that only humans have, we could think ahead and help all creatures, and perhaps if it is not too presumptuous, improve the relationship between species,ecosystems and evolve together as a hole.',
+    body: 'I think human kind are here to enhance the potential on the planet,    even tough all living things and the earth itself is capable of heal or maintain balance, with the abilities that only humans have, we could think ahead and help all creatures, and perhaps if it is not too presumptuous, improve the relationship between species,ecosystems and evolve together as a whole.',
     tabStyle: 'beingWeird',
   },
   {

@@ -1,27 +1,61 @@
 @import './variables.scss';
+@import './mixes';
+
 .section {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   max-width: $max-width-app;
   display: flex;
-  border: solid 1px;
   padding: 0.5em 2em;
   justify-content: space-between;
   align-items: center;
-  background-color: $bg-color;
+  background-color: rgba($color: $bg-color, $alpha: 0.9);
   margin: auto;
+  z-index: 100;
+  height: 4em;
+  box-shadow: 0px 1px 7px $brown;
 }
+.logo {
+  width: 2.3em;
+  height: 2.3em;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: $brown;
+  border-radius: 0.2em;
+  color: $f-text-light;
+  font-family: 'Alegreya Sans', sans-serif; // font-weight: 700;
+  font-size: 1.5rem;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.05);
+    background-color: $blue;
+    color: $brown;
+    transition: all ease-in-out 0.2s;
+  }
+}
+
 .navlinks {
   display: flex;
   flex-direction: row;
   margin: 0;
+  align-items: center;
   li {
+    font-size: 1.3rem;
     margin-left: 3em;
     list-style: none;
     color: $f-text-hover;
+    padding: 0.4em 0.7em;
     cursor: pointer;
-    & :hover {
-      //!
-      color: $f-text-dark;
-      background-color: red;
+    &:hover {
+      @include navLinkActived(0.4);
     }
+  }
+  .selectedNav {
+    @include navLinkActived(0.7);
   }
 }

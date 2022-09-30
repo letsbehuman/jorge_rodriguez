@@ -11,8 +11,7 @@
 
 .tabContainer {
   display: flex;
-  gap: 1.3em;
-
+  gap: 1em;
   justify-content: center;
   button {
     cursor: pointer;
@@ -20,9 +19,11 @@
     border: none;
     padding: 0.5em;
     color: $f-text-dark;
-    font-size: 1em;
+    font-size: 1.4em;
+    font-family: 'Baloo 2', cursive;
+    border-radius: 0.35em 0.35em 0 0;
   }
-
+  //!separar las tab y darles animacion con transition height 1s to conect with body
   $tabsColors: (
     '1': $blue,
     '2': $orange,
@@ -35,7 +36,7 @@
     .tab--#{$key} {
       &:hover {
         background-color: $val;
-        border-radius: 0.25em 0.25em 0 0;
+        transition: all ease 1s;
       }
     }
     .tabActive--#{$key} {

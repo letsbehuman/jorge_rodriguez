@@ -35,15 +35,22 @@
   text-align: center;
   gap: 1em;
   border: solid 7px $color;
-  padding: 2em 3em;
+  padding: 2.5em 3em;
   border-radius: 1em;
   background-color: $brown;
   color: $f-text-light;
-  max-width: 40em;
+  max-width: 50em;
   min-height: 16em;
 }
 @mixin activeTab($color) {
   background-color: $color;
   color: $f-text-light;
   border-radius: 0.35em 0.35em 0 0;
+}
+
+@mixin navLinkActived($opacity) {
+  // color: $f-text-dark;
+  color: $f-text-light;
+  background-color: rgba($color: $green, $alpha: $opacity);
+  border-radius: 0.3em;
 }

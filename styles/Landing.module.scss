@@ -4,7 +4,7 @@
   position: relative;
   display: grid;
   grid-template-columns: 80% 20%;
-  margin: 3em auto;
+  margin: 5em auto 3em;
   padding: 0 4em;
   gap: 0 1em;
   justify-content: center;
@@ -19,8 +19,8 @@
   flex-direction: column;
   justify-content: center;
   h1 {
-    line-height: 88%;
-    font-size: clamp(5rem, 9.2vw + 1rem, 9.8rem);
+    line-height: 110%;
+    font-size: clamp(5rem, 9.2vw + 1rem, 8rem);
     display: flex;
   }
   h2 {
