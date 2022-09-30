@@ -2,7 +2,6 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import styles from '../styles/Navbar.module.scss';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { useState } from 'react';
 import { navLinks } from '../utils/navContent.js';
 
 const Navbar = () => {
