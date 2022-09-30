@@ -9,6 +9,7 @@
   gap: 3em;
   color: $brown;
   justify-items: flex-end;
+  max-width: $max-width-app;
 
   .break {
     width: 100%;

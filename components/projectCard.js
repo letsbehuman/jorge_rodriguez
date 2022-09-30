@@ -19,8 +19,8 @@ function ProjectCard({ project }) {
         <div className={styles.preview}>
           <Image
             src={project.img}
-            height="620"
-            width="690"
+            height="520"
+            width="650"
             layout="intrinsic"
             alt="Project preview"
           />
