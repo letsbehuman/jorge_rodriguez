@@ -21,7 +21,7 @@ export default function Home() {
       <Projects />
       <About />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
