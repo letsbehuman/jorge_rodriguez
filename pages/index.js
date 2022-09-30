@@ -3,6 +3,7 @@ import React, { Fragment } from 'react';
 import SocialBar from '../components/socialBar';
 import Footer from '../components/Footer';
 import Landing from '../components/Landing';
+import Navbar from '../components/Navbar';
 import Collaboration from '../components/Collaboration';
 import About from '../components/About';
 import Contact from '../components/Contact';
@@ -14,6 +15,7 @@ export default function Home() {
       <Head>
         <title>Jorge Rodriguez | Front-End Developer</title>
       </Head>
+      <Navbar />
       <Landing />
       <Collaboration />
       <Projects />
