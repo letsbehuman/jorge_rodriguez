@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styles from '../styles/Landing.module.scss';
-import Portrait from '../public/assets/img/P1010076B.JPG';
+import Portrait from '../public/assets/img/portrait.jpg';
 
 const Landing = () => {
   return (
