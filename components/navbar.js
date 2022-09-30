@@ -1,6 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../styles/Navbar.module.scss';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { useState } from 'react';

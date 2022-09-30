@@ -7,23 +7,19 @@ import Collaboration from '../components/Collaboration';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Projects from '../components/Projects';
-import styles from '../styles/Main.module.scss';
 
 export default function Home() {
   return (
-    <Fragment>
+    <div>
       <Head>
         <title>Jorge Rodriguez | Front-End Developer</title>
       </Head>
-      {/* <Navbar /> */}
-      <div className={styles.main}>
-        <Landing />
-        <Collaboration />
-        <Projects />
-        <About />
-        <Contact />
-        <Footer />
-      </div>
-    </Fragment>
+      <Landing />
+      <Collaboration />
+      <Projects />
+      <About />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
