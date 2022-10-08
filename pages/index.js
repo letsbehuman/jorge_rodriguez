@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Jorge Rodriguez | Front-End Developer</title>
+        <title>{'Jorge Rodríguez | Front-End Developer'}</title>
       </Head>
       <Navbar />
       <Landing />

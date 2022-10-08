@@ -1,5 +1,5 @@
 @import './variables.scss';
-@import './mixes';
+@import './mixins';
 
 .section {
   @include section;
@@ -8,7 +8,9 @@
 .header {
   @include headerSection;
 }
-
+.infoContainer {
+  width: 100%;
+}
 .tabContainer {
   display: flex;
   gap: 1em;
@@ -18,12 +20,13 @@
     background-color: transparent;
     border: none;
     padding: 0.5em;
+    padding-bottom: 0.7em;
     color: $f-text-dark;
     font-size: 1.4em;
     font-family: 'Baloo 2', cursive;
     border-radius: 0.35em 0.35em 0 0;
   }
-  //!separar las tab y darles animacion con transition height 1s to conect with body
+
   $tabsColors: (
     '1': $blue,
     '2': $orange,
@@ -43,6 +46,9 @@
       @include activeTab($val);
     }
   }
+  @media screen and (max-width: 800px) {
+    gap: 0.5em;
+  }
 }
 
 $contentTab: (
@@ -55,5 +61,24 @@ $contentTab: (
 @each $key, $val in $contentTab {
   .#{$key} {
     @include aboutContent($val);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .tabContainer {
+    margin-inline: auto;
+    width: 92%;
+    display: grid;
+    justify-content: flex-start;
+    grid-auto-flow: column;
+    white-space: nowrap;
+    padding: 0 2em;
+    overflow-x: scroll;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 1em;
+    * {
+      scroll-snap-align: start;
+    }
   }
 }

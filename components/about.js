@@ -25,9 +25,9 @@ const About = () => {
     <div id="about" className={styles.section}>
       <div className={styles.header}>
         <div className={styles.break}></div>
-        <h3 className="">About me</h3>
+        <h3>{'About me'}</h3>
       </div>
-      <div>
+      <div className={styles.infoContainer}>
         <div className={styles.tabContainer}>
           {aboutContent.map((content, index) => {
             const { id, tabName } = content;

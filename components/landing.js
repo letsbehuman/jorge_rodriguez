@@ -7,10 +7,12 @@ const Landing = () => {
     <div id="landing" className={styles.section}>
       <div className={styles.title}>
         <h4>
-          Hi there! I am <span className={styles.myName}>Jorge,</span> I want to
+          {'Hi there! I am '}
+          <span className={styles.myName}>{'Jorge,'}</span>
+          {' I want to'}
         </h4>
-        <h1>support projects that improve life in a sustainable way</h1>
-        <h2>with web solutions</h2>
+        <h1>{'support projects that improve life in a sustainable way'}</h1>
+        <h2>{'with web solutions'}</h2>
       </div>
       <div className={styles.portrait}>
         <Image
@@ -18,7 +20,6 @@ const Landing = () => {
           src={Portrait}
           layout="fill"
           objectFit="cover"
-          objectPosition="30% 100%"
           className={styles.imgPortrait}
         />
       </div>

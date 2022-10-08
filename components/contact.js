@@ -49,8 +49,17 @@ const Contact = () => {
         <div className={styles.break}></div>
         <div className={styles.emailSection}>
           <h5>
-            <a href="mailto:letsbehumandesign@gmail.com">
+            <a
+              className={styles.email}
+              href="mailto:letsbehumandesign@gmail.com"
+            >
               {'letsbehumandesign@gmail.com'}
+            </a>
+            <a
+              className={styles.myEmail}
+              href="mailto:letsbehumandesign@gmail.com"
+            >
+              {'My e-mail'}
             </a>
           </h5>
           <h5>

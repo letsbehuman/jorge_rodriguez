@@ -4,7 +4,7 @@
   position: relative;
   display: grid;
   grid-template-columns: 80% 20%;
-  margin: 5em auto 3em;
+  margin: 5em auto;
   padding: 0 4em;
   gap: 0 1em;
   justify-content: center;
@@ -20,7 +20,7 @@
   justify-content: center;
   h1 {
     line-height: 110%;
-    font-size: clamp(5rem, 9.2vw + 1rem, 8rem);
+    font-size: clamp(4rem, 9.2vw + 1rem, 8rem); //5
     display: flex;
   }
   h2 {
@@ -35,14 +35,15 @@
   border-radius: 2em;
   grid-column: 2/3;
 }
+.imgPortrait {
+  object-position: 30% 100%;
+}
 .myName {
   background-color: $extra;
   padding: 0.7rem;
   border-radius: 0.5em;
 }
-.imgPortrait {
-  // border-radius: 2em;
-}
+
 .box {
   position: absolute;
   width: 12vmax;
@@ -53,9 +54,27 @@
   bottom: 3%;
   right: 1%;
 }
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+@media screen and (max-width: 700px) {
+  .section {
+    padding: 1em;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: auto;
+    justify-content: space-between;
+    justify-content: center;
+  }
+  .portrait {
+    display: none;
+  }
+
+  .title {
+    text-align: center;
+    gap: 0.5em;
+    z-index: 3;
+  }
+  .box {
+    width: 21vmax;
+    height: 21vmax;
   }
 }

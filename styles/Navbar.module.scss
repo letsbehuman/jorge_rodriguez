@@ -1,5 +1,5 @@
 @import './variables.scss';
-@import './mixes';
+@import './mixins';
 
 .section {
   position: fixed;
@@ -15,7 +15,7 @@
   margin: auto;
   z-index: 100;
   height: 4em;
-  box-shadow: 0px 1px 7px $brown;
+  box-shadow: 0px 1px 3px $brown;
 }
 .logo {
   width: 2.3em;
@@ -28,7 +28,8 @@
   background-color: $brown;
   border-radius: 0.2em;
   color: $f-text-light;
-  font-family: 'Alegreya Sans', sans-serif; // font-weight: 700;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 700;
   font-size: 1.5rem;
   cursor: pointer;
   &:hover {
@@ -38,8 +39,12 @@
     transition: all ease-in-out 0.2s;
   }
 }
+.navContent {
+  display: flex;
+  justify-content: space-between;
+}
 
-.navlinks {
+.navLinks {
   display: flex;
   flex-direction: row;
   margin: 0;
@@ -57,5 +62,47 @@
   }
   .selectedNav {
     @include navLinkActived(0.7);
+  }
+}
+.menuIcon {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .navContent {
+    display: none;
+  }
+  .menuIcon {
+    z-index: 100;
+    display: block;
+  }
+  .isMenu {
+    // display: block;
+    .navLinks {
+      background-color: rgba($color: $brown, $alpha: 0.8);
+      position: absolute;
+      width: 100%;
+      height: 50vh;
+      top: 4em;
+      bottom: 0;
+      right: 0;
+      padding: 0 2em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5em;
+
+      li {
+        margin: 0;
+        text-align: center;
+        width: 100%;
+        background-color: $green;
+        color: $f-text-light;
+        a {
+          display: block;
+        }
+      }
+    }
   }
 }
