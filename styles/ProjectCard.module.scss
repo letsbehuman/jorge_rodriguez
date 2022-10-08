@@ -48,10 +48,10 @@
       transform: translateX(0);
       display: flex;
       margin: auto 0;
+      gap: 3em;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 3em;
       background-color: rgba($color: $blue, $alpha: 0.7);
     }
   }
@@ -92,7 +92,7 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 700px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -108,7 +108,7 @@
     }
   }
   .tools {
-    flex-direction: row-reverses;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
   }
 }

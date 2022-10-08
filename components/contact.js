@@ -3,7 +3,7 @@ import linkedin from '../public/assets/social/linkedin.png';
 import codewars from '../public/assets/social/codewars.png';
 import github from '../public/assets/social/github.png';
 import Image from 'next/image';
-import CV from '../public/assets/cv.js';
+// import CV from '../public/cv.pdf';
 import React from 'react';
 
 const Contact = () => {
@@ -63,7 +63,7 @@ const Contact = () => {
             </a>
           </h5>
           <h5>
-            <a href={CV} download="Jorge Rodriguez CV">
+            <a href="cv.pdf" download="Jorge Rodriguez CV.pdf">
               {'My resume'}
             </a>
           </h5>
