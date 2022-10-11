@@ -6,4 +6,4 @@ I am currently searching for my future job as Developer where I can learn and co
 
 Check more about what I can do and get in touch!
 
-[My Portfolio](portfolio-jorge-rodriguez.vercel.app)
+[My Portfolio](portfolio-jorge-rodriguez.vercel.app).
