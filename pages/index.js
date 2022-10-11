@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import React, { Fragment } from 'react';
-import SocialBar from '../components/socialBar';
 import Footer from '../components/footer';
 import Landing from '../components/landing';
 import Navbar from '../components/navbar';
@@ -11,7 +10,7 @@ import Projects from '../components/projects';
 
 export default function Home() {
   return (
-    <div>
+    <Fragment>
       <Head>
         <title>{'Jorge Rodríguez | Front-End Developer'}</title>
       </Head>
@@ -22,6 +21,6 @@ export default function Home() {
       <About />
       <Contact />
       <Footer />
-    </div>
+    </Fragment>
   );
 }
