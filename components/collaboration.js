@@ -16,7 +16,7 @@ const Collaboration = () => {
       </div>
       <h4>
         {
-          ' I belive that we can help each others in many ways. If your project is trying to do well to others, do not hesitate to contact me and we will see a way to collaborate.'
+          ' I believe that we can help each other in many ways. If your project is trying to do good to others, do not hesitate to contact me and we will see how we can collaborate.'
         }
       </h4>
     </div>

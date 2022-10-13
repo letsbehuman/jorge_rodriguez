@@ -12,7 +12,7 @@ const Projects = () => {
       </div>
       <p className={styles.myGoal}>
         {
-          'I am constantly thinking of new ideas to create projects that help me learn new tools. My goal is to work with a team in more complex and larger projects that can improve the way we live in this planet.'
+          'I constantly think of new ideas to create projects that help me learn new tools. My goal is to work with a team in more complex and larger projects that can improve the way we live on this planet.'
         }
       </p>
       <div>

@@ -63,7 +63,10 @@ const Contact = () => {
             </a>
           </h5>
           <h5>
-            <a href="cv.pdf" download="Jorge Rodriguez CV.pdf">
+            <a
+              href="Jorge_Rodriguey_resume.pdf"
+              download="Jorge Rodriguez CV.pdf"
+            >
               {'My resume'}
             </a>
           </h5>
