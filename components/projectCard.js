@@ -1,8 +1,8 @@
-import React from 'react';
-import styles from '../styles/ProjectCard.module.scss';
-import Image from 'next/image';
-import { FiGithub } from 'react-icons/fi';
-import { IoOpenOutline } from 'react-icons/io5';
+import React from "react";
+import styles from "../styles/ProjectCard.module.scss";
+import Image from "next/image";
+import { FiGithub } from "react-icons/fi";
+import { IoOpenOutline } from "react-icons/io5";
 
 function ProjectCard({ project }) {
   return (
@@ -29,7 +29,7 @@ function ProjectCard({ project }) {
           </ul>
           <div className={styles.seeMore}>
             <a
-              href={project.demo}
+              href={project.repo}
               target="_blank"
               rel="noreferrer"
               className={styles.link}
