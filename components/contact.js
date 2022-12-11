@@ -1,10 +1,10 @@
-import styles from '../styles/Contact.module.scss';
-import linkedin from '../public/assets/social/linkedin.png';
-import codewars from '../public/assets/social/codewars.png';
-import github from '../public/assets/social/github.png';
-import Image from 'next/image';
+import styles from "../styles/Contact.module.scss";
+import linkedin from "../public/assets/social/linkedin.png";
+import codewars from "../public/assets/social/codewars.png";
+import github from "../public/assets/social/github.png";
+import Image from "next/image";
 // import CV from '../public/cv.pdf';
-import React from 'react';
+import React from "react";
 
 const Contact = () => {
   return (
@@ -33,7 +33,7 @@ const Contact = () => {
                 rel="noreferrer"
               >
                 <Image alt="" src={codewars} layout="fill" objectFit="cover" />
-              </a>{' '}
+              </a>{" "}
             </li>
             <li className={styles.socialIcon}>
               <a
@@ -53,13 +53,13 @@ const Contact = () => {
               className={styles.email}
               href="mailto:letsbehumandesign@gmail.com"
             >
-              {'letsbehumandesign@gmail.com'}
+              {"letsbehumandesign@gmail.com"}
             </a>
             <a
               className={styles.myEmail}
               href="mailto:letsbehumandesign@gmail.com"
             >
-              {'My e-mail'}
+              {"My e-mail"}
             </a>
           </h5>
           <h5>
@@ -67,7 +67,7 @@ const Contact = () => {
               href="Jorge_Rodriguey_resume.pdf"
               download="Jorge Rodriguez CV.pdf"
             >
-              {'My resume'}
+              {"My resume"}
             </a>
           </h5>
         </div>
