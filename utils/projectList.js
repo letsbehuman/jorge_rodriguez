@@ -3,7 +3,7 @@ export const projectList = [
     id: 1,
     title: "What's that?!",
     description1:
-      "Part of a Chingu Voyage, a six weeks team project where we dared to explore React Native combine with Expo and express/typescript in the back-end. This project is still in progress and improving",
+      "Part of a Chingu Voyage, a six weeks team project following the Agile methodology, where we dared to explore React Native combine with Expo and express/typescript in the back-end. This project is still in progress and improving",
     description2:
       "With this game, through AI we can help kids to learn new words around their environment, the user can take a photo of any object and will try to identify it correctly in a small quiz.",
 
