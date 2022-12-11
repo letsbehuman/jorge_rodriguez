@@ -23,7 +23,7 @@ const Contact = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <Image alt="" src={github} layout="fill" objectFit="cover" />
+                <Image alt="" src={github} fill />
               </a>
             </li>
             <li className={styles.socialIcon}>
@@ -32,8 +32,8 @@ const Contact = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <Image alt="" src={codewars} layout="fill" objectFit="cover" />
-              </a>{" "}
+                <Image alt="" src={codewars} fill />
+              </a>
             </li>
             <li className={styles.socialIcon}>
               <a
@@ -41,7 +41,7 @@ const Contact = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <Image alt="" src={linkedin} layout="fill" objectFit="cover" />
+                <Image alt="" src={linkedin} fill />
               </a>
             </li>
           </ul>

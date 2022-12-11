@@ -3,7 +3,6 @@ import styles from "../styles/ProjectCard.module.scss";
 import Image from "next/image";
 import { FiGithub } from "react-icons/fi";
 import { IoOpenOutline } from "react-icons/io5";
-import ReactPlayer from "react-player/youtube";
 
 function ProjectCard({ project }) {
   return (
@@ -15,17 +14,33 @@ function ProjectCard({ project }) {
       </div>
       <div className={styles.project__preview}>
         {project.source[0] === "image" && (
-          <Image src={project.source[1]} layout="fill" alt="Project preview" />
+          // <Image
+          //   className={styles.image}
+          //   src={project.source[1]}
+          //   alt="Project preview"
+          //   fill
+          //   sizes="(max-width:768px) 100%,
+          // (max-width:1200px) 50%,
+          // 33%"
+          // />
+          <img
+            alt="Project preview"
+            src={project.source[1]}
+            className={styles.image}
+          />
         )}
         {project.source[0] === "video" && (
-          <video width="100%" autoPlay muted controls>
+          <video autoPlay muted controls className={styles.image}>
             <source src={project.source[1]} type="video/mp4" />
           </video>
         )}
+
         <div className={styles.technical}>
           <ul className={styles.tools}>
             {project.tools.map((tool, index) => (
-              <li key={index}>{tool}</li>
+              <li key={index}>
+                <p>{tool}</p>
+              </li>
             ))}
           </ul>
           <div className={styles.seeMore}>

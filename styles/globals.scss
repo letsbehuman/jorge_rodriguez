@@ -1,5 +1,5 @@
-@import 'variables';
-@import './mixins';
+@import "variables";
+@import "./mixins";
 
 * {
   box-sizing: border-box;
@@ -12,7 +12,7 @@
   --fs-600: 1.8rem;
   --fs-800: 2.5rem;
   --fs-1000: 3.4rem;
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1200px) {
     --fs-400: 1rem;
     --fs-500: 1.4rem;
     --fs-600: 1.5rem;
@@ -24,7 +24,7 @@ html {
   background-color: $bg-color;
   scroll-behavior: smooth;
   scroll-padding-top: 5.5em;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: "Fjalla One", sans-serif;
 }
 body {
   margin-inline: auto;
@@ -32,7 +32,7 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-  font-family: 'Baloo 2', cursive;
+  font-family: "Baloo 2", cursive;
 }
 li {
   list-style: none;
@@ -47,14 +47,14 @@ h3 {
 h4 {
   font-size: var(--fs-600);
   font-weight: 400;
-  font-family: 'Baloo 2', cursive;
+  font-family: "Baloo 2", cursive;
 }
 h5 {
   font-size: var(--fs-500);
   font-weight: 200;
-  font-family: 'Baloo 2', cursive;
+  font-family: "Baloo 2", cursive;
 }
 p {
-  font-family: 'Baloo 2', cursive;
+  font-family: "Baloo 2", cursive;
   font-size: var(--fs-400);
 }

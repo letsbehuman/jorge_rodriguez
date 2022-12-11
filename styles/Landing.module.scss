@@ -1,4 +1,4 @@
-@import './variables.scss';
+@import "./variables.scss";
 
 .section {
   position: relative;
@@ -36,6 +36,7 @@
   grid-column: 2/3;
 }
 .imgPortrait {
+  object-fit: cover;
   object-position: 30% 100%;
 }
 .myName {
