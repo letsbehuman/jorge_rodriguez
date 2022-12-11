@@ -2,7 +2,6 @@ import ProjectCard from "./projectCard";
 import styles from "../styles/Projects.module.scss";
 import { projectList } from "../utils/projectList";
 const Projects = () => {
-  // console.log(projectList, 'hi');
   return (
     <div id="projects" className={styles.section}>
       <div className={styles.header}>

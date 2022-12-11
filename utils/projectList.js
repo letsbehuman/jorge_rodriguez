@@ -19,6 +19,7 @@ export const projectList = [
       "The idea for this web-app is to have fast and easy access to your vegetables' information and make your vegetable plots easy to maintain. Showing usefull information about when to plant the seeds, harvest or what pests can affect your veggies.",
     description2:
       "The idea for this app emerged from my own need to have the necessary information for maintaining my future vegetable plots, working with the 1 square foot garden methodology.",
+
     source: ["image", "/assets/projects/vegetableCompanion.jpg"],
     tools: ["React", "Nodejs", "useReducer", "Postgresql"],
     demo: "https://serene-axolotl-2c581b.netlify.app",

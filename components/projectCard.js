@@ -15,22 +15,9 @@ function ProjectCard({ project }) {
       </div>
       <div className={styles.project__preview}>
         {project.source[0] === "image" && (
-          <Image
-            src={project.source[1]}
-            height="520"
-            width="650"
-            layout="intrinsic"
-            alt="Project preview"
-          />
+          <Image src={project.source[1]} layout="fill" alt="Project preview" />
         )}
         {project.source[0] === "video" && (
-          // <ReactPlayer
-          //   url={project.source[1]}
-          //   volume
-          //   muted
-          //   loop
-          //   // height="100%"
-          // />
           <video width="100%" autoPlay muted controls>
             <source src={project.source[1]} type="video/mp4" />
           </video>
