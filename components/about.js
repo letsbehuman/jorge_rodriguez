@@ -1,7 +1,7 @@
-import { useRouter } from 'next/router';
-import React, { useState, useEffect } from 'react';
-import styles from '../styles/About.module.scss';
-import { aboutContent } from '../utils/aboutContent';
+import { useRouter } from "next/router";
+import React, { useState, useEffect } from "react";
+import styles from "../styles/About.module.scss";
+import { aboutContent } from "../utils/aboutContent";
 
 const About = () => {
   const [contentActive, setContentActive] = useState();
@@ -17,15 +17,14 @@ const About = () => {
     const currentContent = aboutContent.find((content) => content.id === id);
     setTabActived(id);
     setContentActive(currentContent);
-    console.log(id);
   };
 
-  if (!contentActive) return 'Loading...';
+  if (!contentActive) return "Loading...";
   return (
     <div id="about" className={styles.section}>
       <div className={styles.header}>
         <div className={styles.break}></div>
-        <h3>{'About me'}</h3>
+        <h3>{"About me"}</h3>
       </div>
       <div className={styles.infoContainer}>
         <div className={styles.tabContainer}>

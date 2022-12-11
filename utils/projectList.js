@@ -46,7 +46,7 @@ export const projectList = [
     description2:
       "You can create your own favorite recipes list and create your own recipes to store safely your top dishes. This project was part of a JavaScript Master course.",
     source: ["image", "/assets/projects/forkify.jpg"],
-    tools: ["Javascript", "MVC Architecture"],
+    tools: ["Javascript", "MVC Architecture", "HTML5"],
     demo: "https://regal-bienenstitch-57e346.netlify.app/#5ed6604691c37cdc054bd06e",
     repo: "https://github.com/letsbehuman/Forkify-course",
   },
