@@ -3,8 +3,8 @@ import linkedin from "../public/assets/social/linkedin.png";
 import codewars from "../public/assets/social/codewars.png";
 import github from "../public/assets/social/github.png";
 import Image from "next/image";
-// import CV from '../public/cv.pdf';
 import React from "react";
+import Link from "next/link";
 
 const Contact = () => {
   return (
@@ -64,7 +64,7 @@ const Contact = () => {
           </h5>
           <h5>
             <a
-              href="Jorge_Rodriguey_resume.pdf"
+              href="/assets/Jorge_Rodriguey_resume.pdf"
               download="Jorge Rodriguez CV.pdf"
             >
               {"My resume"}
