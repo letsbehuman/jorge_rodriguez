@@ -1,7 +1,6 @@
-import ProjectCard from './projectCard';
-import styles from '../styles/Projects.module.scss';
-import { projectList } from '../utils/projectList';
-
+import ProjectCard from "./projectCard";
+import styles from "../styles/Projects.module.scss";
+import { projectList } from "../utils/projectList";
 const Projects = () => {
   // console.log(projectList, 'hi');
   return (
@@ -12,14 +11,12 @@ const Projects = () => {
       </div>
       <p className={styles.myGoal}>
         {
-          'I constantly think of new ideas to create projects that help me learn new tools. My goal is to work with a team in more complex and larger projects that can improve the way we live on this planet.'
+          "I constantly think of new ideas to create projects that help me learn new tools. My goal is to work with a team in more complex and larger projects that can improve the way we live on this planet."
         }
       </p>
-      <div>
-        {projectList.map((project, index) => {
-          return <ProjectCard key={index} project={project} />;
-        })}
-      </div>
+      {projectList.map((project, index) => {
+        return <ProjectCard key={index} project={project} />;
+      })}
     </div>
   );
 };
