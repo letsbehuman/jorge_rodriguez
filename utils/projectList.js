@@ -9,7 +9,7 @@ export const projectList = [
 
     source: ["video", "/assets/what-is-that.mp4"],
     tools: ["React-Native", "Expo", "Express", "Typescript"],
-    demo: "https://serene-axolotl-2c581b.netlify.app",
+    demo: "https://github.com/chingu-voyages/v41-bears-team-29",
     repo: "https://github.com/chingu-voyages/v41-bears-team-29",
   },
   {
