@@ -10,7 +10,7 @@ const Projects = () => {
       </div>
       <p className={styles.myGoal}>
         {
-          "I constantly think of new ideas to create projects that help me learn new tools. My goal is to work with a team in more complex and larger projects that can improve the way we live on this planet."
+          "I thrive on cooking up fresh ideas and turning them into projects that not only teach me new tools but also have the potential to make a real difference. My sights are set on teaming up with passionate folks for big, impactful projects that can shape a better world."
         }
       </p>
       {projectList.map((project, index) => {

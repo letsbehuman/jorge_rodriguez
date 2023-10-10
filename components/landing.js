@@ -7,12 +7,12 @@ const Landing = () => {
     <div id="landing" className={styles.section}>
       <div className={styles.title}>
         <h4>
-          {"Hi there! I am "}
+          {"Hi there! I'm "}
           <span className={styles.myName}>{"Jorge,"}</span>
-          {" I want to"}
+          {}
         </h4>
-        <h1>{"support projects that improve life in a sustainable way"}</h1>
-        <h2>{"with web solutions"}</h2>
+        <h1>{"Committed to Enhancing Lives Sustainably"}</h1>
+        <h2>{"through web solutions"}</h2>
       </div>
       <div className={styles.portrait}>
         <Image
